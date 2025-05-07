@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mother's Day Memory Game</title>
+</head>
+<body>
+    <div class="animation">
+        <div id="sqr-1" class="anim-sqr"></div>
+        <div id="sqr-2" class="anim-sqr"></div>
+        <div id="sqr-3" class="anim-sqr"></div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-inner">
+            <h2>You Win! Happy Mother's Day</h2>
+            <p>
+                You are an incredible mother: so loving and attentive.
+                <br>I'm proud of you and I am inspired by the way you raised your kids.
+                <br>The pictures will randomize every time.
+            </p>
+            <button id="reset-game">Play Again?</button>
+        </div>
+    </div>
+    <div id="game-container">
+        <h1 class="title">Memory Game</h1>
+        <div class="matches-made">
+            <p>Matches Made</p>
+            <p id="matches"></p>
+        </div>
+        <!-- <p>Click the start button to play a game that will be a walk down memory lane.</p> -->
+        <button id="start">Click to Start</button>
+        <div id="card-grid">
+            
+        </div>
+        <audio src="./match.wav" class="hidden" id="ding"></audio>
+        <audio src="./you-win.mp3" class="hidden" id="you-win"></audio>
+    </div>
+        
+</body>
+<script src="./script.js" defer></script>
+</html>
